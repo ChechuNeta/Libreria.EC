@@ -1,0 +1,48 @@
+<!-- 
+<section>
+@if(Usu)
+  {
+     <p>Bienvenido {{username}}</p>
+
+     <app-interf-user  [Username]="username"/>
+     [Username]="username"
+
+     <button (click)="Usu = false">exit</button>
+
+  }
+
+  @else
+  {
+        @if(Admin)
+        {
+             
+             <app-interf-admin [Adminname]="Administrador"></app-interf-admin>
+
+             <button (click)="Admin = false">exit</button>
+
+        }
+        @else
+        {
+              <p>Inicia Sesi&oacute;n</p>
+              <button (click)="Usu = true">Usuario</button>
+              <button (click)="Admin = true">Administrador</button> 
+        }
+  }
+</section>  -->
+
+<section *ngIf="Usu">
+  
+  <app-interf-user [Username]="username"></app-interf-user> <!--username esta definido en user-admint.ts con un valor determinado, y lo pasa a la variable Username del componente interf-user-->
+  <button (click)="Usu = false">exit</button>
+</section>
+
+<section *ngIf="!Usu && Admin">
+  <app-interf-admin [Adminname]="adminname"></app-interf-admin> <!--adminname esta definido en user-admint.ts con un valor determinado, y lo pasa a la variable Adminname del componente interf-admin-->
+  <button (click)="Admin = false">exit</button>
+</section>
+
+<section *ngIf="!Usu && !Admin">
+  <p>Inicia Sesión</p>
+  <button (click)="Usu = true">Usuario</button>
+  <button (click)="Admin = true">Administrador</button>
+</section>
