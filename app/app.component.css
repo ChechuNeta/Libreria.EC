@@ -6,6 +6,7 @@ h1
 {
     font-family: 'Arial', sans-serif;
     text-align: center;
+    text-decoration: overline;
 }
 #secciones
 {
@@ -14,37 +15,27 @@ h1
 }
 .ejemplos
 {
+    height: 25%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color: #6daad3;
-    height: 45%;
     padding: 1em;
-}
-.libro1
-{
-    background-color: bisque;
-    border: 1px solid black;
-    grid-column: 1 / span 1;
-    grid-row: 1 / 2;
-    color: bisque;
+    margin: auto;
+    top: 0; bottom: 0; /* Establece el margen superior e inferior en 0 */
+    left: 0; right: 0;
 }
 img
 {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
-.libro2
+
+.libro1,.libro2,.libro3
 {
-    background-color: bisque;
+    background-color: rgb(3, 52, 83);
     border: 1px solid black;
-    grid-column: 2 / span 1;
-    grid-row: 1 / 2;
-}
-.libro3
-{
-    background-color: bisque;
-    border: 1px solid black;
-    grid-column: 3 / span 1;
-    grid-row: 1 / 2;
+    padding: 1vh;
 }
