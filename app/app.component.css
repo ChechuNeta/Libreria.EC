@@ -1,0 +1,50 @@
+body
+{
+    background-color: lightblue;
+}
+h1
+{
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+#secciones
+{
+    background-color: black;
+    width: 100%;
+}
+.ejemplos
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #6daad3;
+    height: 45%;
+    padding: 1em;
+}
+.libro1
+{
+    background-color: bisque;
+    border: 1px solid black;
+    grid-column: 1 / span 1;
+    grid-row: 1 / 2;
+    color: bisque;
+}
+img
+{
+    width: 100%;
+    height: auto;
+}
+.libro2
+{
+    background-color: bisque;
+    border: 1px solid black;
+    grid-column: 2 / span 1;
+    grid-row: 1 / 2;
+}
+.libro3
+{
+    background-color: bisque;
+    border: 1px solid black;
+    grid-column: 3 / span 1;
+    grid-row: 1 / 2;
+}
