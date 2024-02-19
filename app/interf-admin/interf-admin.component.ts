@@ -14,5 +14,15 @@ export class InterfAdminComponent
 
   @Input() Adminname= "";
 
+  addBook()
+  {
+
+    var nombrelibro = document.getElementById("nombrelibro") as HTMLInputElement;
+
+    const nombre = nombrelibro.value;
+
+    console.log(nombre);
+  }
+
 
 }

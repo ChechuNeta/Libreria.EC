@@ -15,7 +15,7 @@ import { InterfUserComponent } from '../interf-user/interf-user.component';
 
 export class UsuarioAdminComponent 
 {
-  username = "Perdro";
+  username = "Pedro";
   Usu = false;
 
   adminname = "ElAdminJefazo";

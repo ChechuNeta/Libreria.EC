@@ -13,4 +13,18 @@ export class InterfUserComponent
 {
 
   @Input() Username= "";
+
+  Logged = false
+
+  Entrar()
+  {
+    var username = document.getElementById("nombre") as HTMLInputElement;
+
+    const nombre = username.value;
+
+    this.Logged = true;
+    alert("hola " + nombre)
+
+  }
+
 }

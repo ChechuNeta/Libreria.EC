@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* BOTONES */
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* USUARIO*/
+  section[user] {
+    background-color: #2ecc71;
+  }
+  
+  /* ADMINISTRADOR*/
+  section[admin] {
+    background-color: #e74c3c;
+    color: #fff;
+  }
+  
+  button.exit {
+    background-color: #e74c3c;
+  }
+  
+  button.exit:hover {
+    background-color: #c0392b;
+  }
+  
