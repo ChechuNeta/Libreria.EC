@@ -1,0 +1,54 @@
+/* libros.component.css */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  li:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+  }
+  
+
+.libros-disponibles-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .libros-disponibles-title h2 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .libros-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .libros-list li {
+    background-color: #92b7b7;
+    border: 1px solid #ddd;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .libros-list li:hover {
+    background-color: #caf2fe;
+    cursor: pointer;
+  }
+  
+  img{
+    width: 110px;
+  }
