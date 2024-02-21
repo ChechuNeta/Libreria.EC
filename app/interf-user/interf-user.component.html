@@ -1,8 +1,11 @@
-<label>Nombre</label>
-<input type="text" name="nombre" id="nombre" required><br>
-<label>Contraseña</label>
-<input type="password" name="password" id="password"><br>
-<button (click)="Entrar()">Entrar</button><br>
-
 @if(Logged)
 {<app-libros/>}
+@else
+{
+    <label>Nombre</label>
+    <input type="text" name="nombre" id="nombre" required><br>
+    <label>Contraseña</label>
+    <input type="password" name="password" id="password"><br>
+    <button (click)="Entrar()">Entrar</button><br>
+}
+

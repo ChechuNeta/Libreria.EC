@@ -1,0 +1,39 @@
+#divformularios
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+}
+
+#añadirLibro
+{
+   grid-column: 1/2; 
+    border: 1px dotted black;
+    padding: 1em;
+    text-align: left;
+    width:20em;
+}
+
+#borrarLibro
+{
+    grid-column: 2/3;
+    border: 1px dotted black;
+    padding: 1em;
+    width:20em;
+}
+
+#añadirLibro p
+{
+    font-size: 1em;
+    font-weight: bold;
+}
+label
+{
+    padding: 1em;
+    display: inline-block;
+    text-align: left;
+}
+#nombreLibro,#autor,#categoria
+{
+    display: inline-block;
+}

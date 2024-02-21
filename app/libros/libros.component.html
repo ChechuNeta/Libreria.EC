@@ -1,6 +1,6 @@
 <div class="libros-disponibles-title">
   <h2>Nuestros libros disponibles</h2>
 </div>
-<ul>
-    <li *ngFor="let game of libros; trackBy: trackById">{{ game.titulo }}<br><img src="{{game.png}}"/></li>
-  </ul>
+
+    <!--<li *ngFor="let game of libros; trackBy: trackById">{{ game.titulo }}<br><img src="{{game.png}}"/></li>-->
+    <button (click)="mostrarLibros()">Ver libros consola</button>

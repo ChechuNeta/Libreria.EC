@@ -23,7 +23,7 @@ export class InterfUserComponent
     const nombre = username.value;
 
     this.Logged = true;
-    alert("hola " + nombre)
+    alert("Bienvenido " + nombre)
 
   }
 

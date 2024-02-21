@@ -1,7 +1,42 @@
-<p>Bienvenido {{Adminname}}</p>
+@if(Logged)
+{
+    <p>Bienvenido {{Adminname}}</p>
 
-<label>Añadir libro</label>
-<input id="nombrelibro" type="text"/>
-<button (click)="addBook()">Añadir</button>
+<div id="divformularios">
 
-<app-libros/>
+    <div id="añadirLibro">
+        <p>Añadir Libro</p>
+
+        <label>Nombre</label>
+        <input id="nombrelibro" type="text"/><br>
+
+        <label>Autor</label>
+        <input id="autor" type="text"/><br>
+
+        <label>Año publicacion</label>
+        <input id="anio_publicacion" type="text"/><br><br>
+
+        <label>Categoría</label>
+        <input id="categoria" type="text"/><br><br>
+
+        <button (click)="addBook()">Añadir</button>
+    </div>
+
+
+    <div id="borrarLibro">
+        <p>Borrar libro</p>
+        <button (click)="addBook()">Añadir</button>
+    </div>
+
+</div>
+
+
+
+    <app-libros/>
+}
+@else
+{
+    <label>Contraseña</label>
+    <input type="password" name="password" id="password"><br>
+    <button (click)="EntrarAdmin()">Entrar</button><br>
+}
