@@ -54,4 +54,11 @@ export class ControlListLibService {
   {
     return this.libros;
   }
+
+  actualizarlibros(id: number)
+  {
+    this.libros = this.libros.filter(libro => libro.id !== id);
+    alert("borrado libro de id: " + id)
+  }
 }
+

@@ -3,4 +3,10 @@
 </div>
 
     <!--<li *ngFor="let game of libros; trackBy: trackById">{{ game.titulo }}<br><img src="{{game.png}}"/></li>-->
-    <button (click)="mostrarLibros()">Ver libros consola</button>
+
+<ul>
+    @for(libro of libros; track libro.id)
+    {
+        <li>{{libro.titulo}}<br><img src="{{libro.png}}"/></li>
+    }
+</ul>

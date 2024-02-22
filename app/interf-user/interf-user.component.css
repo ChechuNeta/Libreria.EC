@@ -1,0 +1,35 @@
+/* Estilos existentes permanecen sin cambios */
+
+/* Estilos para la sección de inicio de sesión */
+.login-section {
+    text-align: center;
+  }
+  
+  .login-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .login-section input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .login-section button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+  }
+  
+  .login-section button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+  }
+  

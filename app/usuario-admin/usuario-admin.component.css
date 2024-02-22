@@ -23,6 +23,7 @@ body {
     color: #fff;
     border: none;
     border-radius: 3px;
+    
   }
   
   button:hover {
@@ -53,3 +54,13 @@ body {
     background-color: #c0392b;
   }
   
+/* BOTONES DE EXIT */
+  .exit-button {
+    background-color: #e74c3c;
+    color: #fff;
+    margin-top: 10px;
+  }
+  
+  .exit-button:hover {
+    background-color: #c0392b;
+  }

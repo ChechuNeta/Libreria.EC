@@ -35,12 +35,12 @@
 <section *ngIf="Usu">
   
   <app-interf-user [Username]="username"></app-interf-user> <!--username esta definido en user-admint.ts con un valor determinado, y lo pasa a la variable Username del componente interf-user-->
-  <button (click)="Usu = false">exit</button>
+  <button (click)="Usu = false" class="exit-button">exit</button>
 </section>
 
 <section *ngIf="!Usu && Admin">
   <app-interf-admin [Adminname]="adminname"></app-interf-admin> <!--adminname esta definido en user-admint.ts con un valor determinado, y lo pasa a la variable Adminname del componente interf-admin-->
-  <button (click)="Admin = false">exit</button>
+  <button (click)="Admin = false" class="exit-button">exit</button>
 </section>
 
 <section *ngIf="!Usu && !Admin">

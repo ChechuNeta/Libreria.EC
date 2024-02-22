@@ -5,7 +5,7 @@
 <div id="divformularios">
 
     <div id="añadirLibro">
-        <p>Añadir Libro</p>
+        <p>AÑADIR LIBRO</p>
 
         <label>Nombre</label>
         <input id="nombrelibro" type="text"/><br>
@@ -19,13 +19,22 @@
         <label>Categoría</label>
         <input id="categoria" type="text"/><br><br>
 
+
         <button (click)="addBook()">Añadir</button>
     </div>
 
 
     <div id="borrarLibro">
-        <p>Borrar libro</p>
-        <button (click)="addBook()">Añadir</button>
+        <p>BORRAR LIBRO</p>
+        <select name="ellibroaborrar" id="ellibroaborrar">
+            @for(libro of loslibros; track libro.id)
+            {
+                <option value="{{libro.id}}">{{libro.titulo}}</option>
+            }
+
+        </select>
+
+        <button (click)="deletebook()">Borrar</button>
     </div>
 
 </div>
@@ -36,7 +45,9 @@
 }
 @else
 {
+    <section class="admin-section">
     <label>Contraseña</label>
     <input type="password" name="password" id="password"><br>
     <button (click)="EntrarAdmin()">Entrar</button><br>
+    </section>
 }

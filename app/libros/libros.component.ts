@@ -11,6 +11,7 @@ import { ControlListLibService } from '../control-list-lib.service';
 })
 export class LibrosComponent {
 
+  libros = this.mostrarLibros();
 
   trackById(index: number, item: any): number {
     return item.id;
@@ -21,7 +22,7 @@ export class LibrosComponent {
   mostrarLibros(){
     const libros = this.listLib.checklibros()
 
-    console.log(libros);
+    return libros;
   }
 
 }
